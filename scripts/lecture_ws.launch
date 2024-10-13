@@ -1,0 +1,5 @@
+<launch>
+    <node pkg = "pub_pkg" type = "publisher.py" name="pub_node" />
+    <node pkg = "sub_pkg" type = "subscriber.py" name="sub_node" launch-prefix = "gnome-terminal -e" />
+
+</launch>
