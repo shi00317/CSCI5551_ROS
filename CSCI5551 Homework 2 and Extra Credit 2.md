@@ -57,7 +57,7 @@ if the installation success, you will see:
 ### verifying-the-installation
 Open a terminal and running following command. You should see a Gazebo simulation running and there is a turtlebot in the environment.
 ```bash
-export TURTLEBOT3_MODEL = burger
+export TURTLEBOT3_MODEL=burger
 roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 

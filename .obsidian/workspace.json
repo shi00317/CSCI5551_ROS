@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROS Lecture.md",
+                "file": "CSCI5551 Homework 2 and Extra Credit 2.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ROS Lecture.md",
+                "file": "CSCI5551 Homework 2 and Extra Credit 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ROS Lecture.md",
+                "file": "CSCI5551 Homework 2 and Extra Credit 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ROS Lecture.md"
+                "file": "CSCI5551 Homework 2 and Extra Credit 2.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "aeeea38d7858fc4d",
   "lastOpenFiles": [
-    "ROS Environment Setup.md",
     "Lecture Bash.md",
-    "CSCI5551 Homework 2 and Extra Credit 2.md"
+    "ROS Environment Setup.md",
+    "CSCI5551 Homework 2 and Extra Credit 2.md",
+    "scripts/ROS Lecture.md"
   ]
 }
