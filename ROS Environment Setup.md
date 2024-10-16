@@ -2,7 +2,7 @@ This guide provides step-by-step instructions for setting up the ROS1 Noetic env
 
 ## Table of Contents
 - [Setting Up on Linux (Ubuntu)](#Setting-up-on-ubuntu)
-- [Setting Up on non-Linux PC](#Seting-up-on-non-linux)
+- [Setting Up on non-Linux PC](#Setting-up-on-non-linux)
 
 ### Setting-up-on-ubuntu
 - Ubuntu 20.04

@@ -10,14 +10,17 @@ The purpose of this assignment is to give you experience writing ROS code. The s
 In this assignment you will write:
 - ROS package
 - ROS Publisher, Subscriber, Launch File
-- A custom controller for the Turtlebot Gazebo simulation
+- Utilizing robot in Gazebo simulation
 - *Extra Credit 2*
 
 ##### Terminal Configuration
 
 Make sure to add the following lines to the end of your terminal config file located at ~/.bashrc so ROS commands work correctly. You only need to do this once, as every new terminal will run ~/.bashrc when launched.
-	source /opt/ros/noetic/setup.bash
-	source /home/$USER/catkin_ws/devel/setup.bash
+```bash
+# without adding to the .bashrc, you need to do the following everytime when you open a new terminal window.
+source /opt/ros/noetic/setup.bash
+source /home/$USER/catkin_ws/devel/setup.bash
+```
 
 ##### Required Packages
 
@@ -62,6 +65,7 @@ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 
 ## **Getting Started**
+**==Both Homework 2 and Extra Credit 2 are due in Nov 29th midnight.==**
 Create hw_pkg folder in your workspace.
 ##### 1.Turtlebot
 -  Using LiDAR sensor data in turtlebot to achieve obstacle avoidance ability in gazebo simulation. In the simulation environment, the turtlebot will keep moving forward  if there is no obstacle in front of it. otherwise, it will automatically turn right until there is no obstacle.==(30 points)==
@@ -99,7 +103,7 @@ rostopic echo /ranges
 ```
 
 ## **Submission**
-
+- **==Both Homework 2 and Extra Credit 2 are due in Nov 29th midnight.==**
 - Upload a zip file contain your workspace folder to the class Canvas. 
 -  A demo video to demonstrate obstacle avoidance in turtlebot simulation environment and five trajectories execution in Kinova robot simulation environment.  
 - For extra credit code, if you choose to do it, to the separate Extra Credit 2 assignment on Canvas using the naming format: extra-credit-2-**UMNEmail**.py
