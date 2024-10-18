@@ -1,0 +1,24 @@
+FROM ros:noetic
+
+RUN apt update && apt install git python3 python3-pip tmux -y
+RUN python3 -m pip install conan==1.59
+
+WORKDIR /root
+RUN conan config set general.revisions_enabled=1
+RUN conan profile new default --detect > /dev/null
+RUN conan profile update settings.compiler.libcxx=libstdc++11 default
+RUN mkdir -p catkin_workspace/src
+
+WORKDIR /root/catkin_workspace/src
+RUN git clone -b noetic-devel https://github.com/Kinovarobotics/ros_kortex.git
+
+WORKDIR /root/catkin_workspace
+RUN rosdep install --from-paths src --ignore-src -y
+RUN /bin/bash -c "source /ros_entrypoint.sh && catkin_make --cmake-args -DCONAN_TARGET_PLATFORM=jetson"
+# RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && catkin_make --cmake-args -DCONAN_TARGET_PLATFORM=jetson"
+
+RUN apt autoremove -y \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+ENTRYPOINT ["roslaunch", "kortex_gazebo", "spawn_kortex_robot.launch"]
